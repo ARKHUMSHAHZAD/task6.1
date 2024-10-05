@@ -20,7 +20,7 @@ pipeline {
             steps {
                 echo 'Performing code analysis...'
                 // Use tools like SonarQube
-                sh 'sonar-scanner'
+                bat'sonar-scanner'
             }
         }
         stage('Security Scan') {
